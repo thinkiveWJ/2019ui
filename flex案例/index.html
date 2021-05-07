@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    html,body{
+      font-size: 62.5%;
+      font-family: '微软雅黑', 'Courier New', Courier, monospace;
+      background-color: #fcfcfc;
+    }
+    img{
+      display: flex;
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+    .banner img{
+      border-bottom-left-radius: 1.2rem;
+      border-bottom-right-radius: 1.2rem;
+    }
+    nav > ul {
+      display: flex;
+      font-size: .75rem;
+    }
+    nav > ul > li{
+      flex: 1;
+    }
+    nav > ul > li > a{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .white-bg{
+      background-color: #fff;
+    }
+    .border-radius8{
+      border-radius: .8rem;
+    }
+    .mlr15{
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    ul{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+    .text-center{
+      text-align: center;
+    }
+    .ptb8{
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+    }
+    .relative{
+      position: relative;
+    }
+    nav{
+      transform: translateY(-50%);
+    }
+    nav a.relative{
+      height: 5rem;
+    }
+    nav a.relative::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4rem;
+      background: url(./nav_icon.png) center 0 no-repeat;
+      background-size: 4rem 20rem;
+    }
+    nav li:nth-child(2) a.relative::before{
+      background-position: center -4rem;
+    }
+    nav li:nth-child(3) a.relative::before{
+      background-position: center -8rem;
+    }
+    nav li:nth-child(4) a.relative::before{
+      background-position: center -12rem;
+    }
+    nav li:nth-child(5) a.relative::before{
+      background-position: center -16rem;
+    }
+    .menus > ul{
+      display: flex;
+    }
+    .flex135{
+      flex: 135;
+      
+    }
+    .flex100{
+      flex: 100;
+    }
+    .flex200{
+      flex: 200;
+    }
+    .bg1{
+      background: url(./bg1.png) right bottom no-repeat;
+      background-size: 7.3rem 3.25rem;
+      
+    }
+    .one{
+      background-image: linear-gradient(to right, rgb(250, 89, 86), rgb(241, 104, 101) 54%);
+    }
+    .menus > ul > li{
+      height: 6.48rem;
+    }
+    .menus a{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-size: 1.4rem;
+      align-items: center;
+      
+    }
+    .pl15{
+      padding-left: 15px;
+      box-sizing: border-box;
+    }
+    .bg2{
+      background: url(./bg2.png) left bottom no-repeat;
+      background-size: auto 2rem;
+      justify-content: center;
+    }
+    .two{
+      background-image: linear-gradient(to right, rgb(241, 104, 101), rgb(228, 105, 103) 54%);
+    }
+    .bg3{
+      background: url(./bg3.png) right bottom no-repeat;
+      background-size: 24.15rem auto;
+      justify-content: center;
+      color: #a05416 !important;
+    }
+    .three{
+      background-image: linear-gradient(to right, rgb(255, 188, 73), rgb(255, 210, 82));
+    }
+    .menus{
+      margin-left: -1px;
+    }
+    .menus li{
+      border-left: 1px solid #fff;
+    }
+    .menus > ul + ul{
+      border-top: 1px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <img src="https://dimg04.c-ctrip.com/images/0zg5d120008lx2gou41C0.png" alt="">
+  </header>
+  <!-- 导航 -->
+  <nav class="relative">
+    <ul class="white-bg border-radius8 mlr15">
+      <li><a href="" class="ptb8 relative">攻略·景点</a></li>
+      <li><a href="" class="ptb8 relative">攻略·景点</a></li>
+      <li><a href="" class="ptb8 relative">攻略</a></li>
+      <li><a href="" class="ptb8 relative">攻略</a></li>
+      <li><a href="" class="ptb8 relative">攻略</a></li>
+    </ul>
+  </nav>
+
+  <section class="menus">
+    <ul class="mlr15">
+      <li class="flex135 one"><a class="bg1 pl15" href="">酒店</a></li>
+      <li class="flex100 two"><a class="bg2" href="">民宿·客栈</a></li>
+      <li class="flex200 three"><a class="bg3" href="">特价·爆款</a></li>
+    </ul>
+    <ul class="mlr15">
+      <li class="flex135 one"><a class="bg1 pl15" href="">酒店</a></li>
+      <li class="flex100 two"><a class="bg2" href="">民宿·客栈</a></li>
+      <li class="flex200 three"><a class="bg3" href="">特价·爆款</a></li>
+    </ul>
+    <ul class="mlr15">
+      <li class="flex135 one"><a class="bg1 pl15" href="">酒店</a></li>
+      <li class="flex100 two"><a class="bg2" href="">民宿·客栈</a></li>
+      <li class="flex200 three"><a class="bg3" href="">特价·爆款</a></li>
+    </ul>
+  </section>
+</body>
+</html>

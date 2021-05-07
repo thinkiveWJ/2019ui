@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+      height: 500px;
+      /* padding: 15px; */
+      background-color: #f1f1f1;
+      display: flex;
+      /* 确定主轴方向 */
+      /* flex-direction: column-reverse; */
+      
+      /* 当子元素的宽度大于父元素的宽度的时候，子元素是否换行显示 */
+      /* flex-wrap: wrap; */
+
+      /* 
+       flex-flow: row wrap;
+       上面一行代码相当于下面两行代码
+       flex-direction: row;
+       flex-wrap: wrap;
+
+       */
+      /* flex-flow: row wrap; */
+
+      /* 设置子元素的在主轴上的对齐方式 */
+      /* justify-content: space-evenly; */
+
+      /* 设置子元素在交叉轴上的对齐方式 */
+      /* align-items: flex-start;
+
+
+      align-content: flex-start   ; */
+
+      justify-content: center;
+      align-items: center;
+    }
+    .red{
+      background-color: #f00;
+      height: 100px;
+    }
+
+    .green{
+      background-color: #0f0;
+      /* height: 150px; */
+    }
+    .w100{
+      width: 50px;
+    }
+    .h100{
+      height: 100px;
+    }
+    .container > div{
+      /* flex-grow规定在空间允许的情况下，子元素如何按照比例分配可用剩余空间。
+      如果所有的子元素的属性都设定为1，则父元素中的剩余空间会等分给所有子元素。
+      如果其中某个子元素的flex-grow设定为2，则在分配剩余空间时该子元素将
+      获得其他元素二倍的空间（至少会尽力获得）。 */
+      /* flex-grow: 1;
+
+
+      flex-shrink: 1; */
+    }
+    .container > .blue{
+      /* flex-grow: 1; */
+      /* flex-basis: 0; */
+    }
+    .blue{
+      background-color: #00f;
+      height: 200px;
+      /* align-self: flex-end; */
+      /* width: 100px ; */
+      /* order的默认值为0;子元素的order值越小，布局越排在前面 */
+      /* order: -1; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="w100 h100 red">red</div>
+    <div class="w100 h100 blue">blue</div>
+    <div class="w100 h100 green">green</div>
+    <!-- <div class="w100 h100 red">red2</div>
+    <div class="w100 h100 blue">blue2</div>
+    <div class="w100 h100 green">green2</div> -->
+  </div>
+</body>
+</html>
